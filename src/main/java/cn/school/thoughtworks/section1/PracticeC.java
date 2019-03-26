@@ -5,7 +5,14 @@ import java.util.Map;
 
 public class PracticeC {
     List<String> collectSameElements(List<String> collection1, Map<String,List<String>> collection2) {
-        //实现练习要求，并改写该行代码。
-        return null;
+        List<String> result =null;
+        for (int i = 0; i < collection1.size(); i++) {
+            String s = collection1.get(i);
+            List<String> ls = collection2.get("value");
+            if(ls.contains(s)){
+                result.add(s);
+            }
+        }
+        return result;
     }
 }
